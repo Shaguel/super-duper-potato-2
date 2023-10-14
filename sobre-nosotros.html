@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre las 10 estrategias probadas para ganar dinero en línea de manera efectiva. Desde freelancing hasta inversiones y más, encuentra tu camino hacia el éxito financiero en la era digital. ¡Empieza a maximizar tus ingresos hoy!">
+    <title>sobre nosotros</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=EB+Garamond&family=Press+Start+2P&family=Roboto:wght@900&family=Russo+One&display=swap');
+
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .full-page{
+            display: grid;
+            grid-template-columns: 50vh, 50vh;
+            grid-template-rows: 100vh;
+            grid-template-areas: 
+                "mitad1 mitad2"
+                "mitad1 mitad2";
+        }
+        .mitad1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(rgb(224, 78, 90), rgb(63, 19, 40));
+            grid-area: mitad1;
+        }
+        .mitad2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            grid-area: mitad2;
+        }
+        .about-us-title{
+            position: absolute;
+            text-align: center;
+            color: white;
+            font-size: 5rem;
+            font-family: 'Bebas Neue', sans-serif;
+
+        }
+        .about-us-text{
+            position: absolute;
+            color: black;
+            padding: 150px;
+            font-family: sans-serif; 
+            font-size: 25px;
+
+        }
+
+        .scroll-to {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px;
+            background-image: linear-gradient(rgb(224, 78, 90), rgb(63, 19, 40));
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .scroll-to img {
+            width: 30px;
+            height: 30px;
+            display: block;
+            margin: auto;
+        }
+        .section{
+            width: 50%;
+            margin: 108px auto 0;
+            font-family: sans-serif; 
+            font-size: 22px;
+        }
+        .section > h1{
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3rem;
+        }
+
+        /*fOOTER*/
+
+        .footer {
+            background-image: linear-gradient(rgb(224, 78, 90), rgb(63, 19, 40));
+            color: #fff;
+            margin-top: 45px;
+            padding: 60px 0;
+            font-family: sans-serif; 
+            }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            }
+
+        .col-md-4 {
+            box-sizing: border-box;
+            padding: 0 20px;
+            }
+
+            /* Estilos para los íconos de redes sociales */
+        .social-icons {
+            list-style-type: none;
+            padding: 0;
+            }
+
+        .social-icons li {
+            display: inline-block;
+            margin-right: 10px;
+            }
+
+        .social-icons a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+            }
+
+        /* Estilos para el formulario de newsletter */
+        .newsletter-form input {
+            width: 70%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .newsletter-form button {
+            width: 30%;
+            padding: 10px;
+            background-color: #f8f8f8;
+            color: #333;
+            border: none;
+            cursor: pointer;
+        }
+
+        .newsletter-form button:hover {
+            background-color: #ccc;
+        }
+
+        /* Estilos para el texto de derechos de autor y política de privacidad */
+        .footer p {
+            font-size: 14px;
+            color: #ccc;
+            margin-bottom: 0;
+        }
+
+        .footer hr {
+            margin: 20px 0;
+            border: 1px solid #666;
+        }
+
+        /* Estilos para los enlaces de derechos de autor y política de privacidad */
+        .footer a {
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (min-width: 319px) and (max-width: 844px){
+            .full-page {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 31vh;
+                grid-template-areas:
+                    "mitad1 mitad1"
+                    "mitad2 mitad2";
+            }
+            .about-us-text {
+                position: static;
+                color: black;
+                padding: 51px;
+                font-family: 'Bebas Neue', sans-serif;
+                font-size: 25px;
+            }
+                                    
+            .section{
+                padding: 50px;
+                width: auto;
+                margin: 0;
+                font-family: 'Bebas Neue', sans-serif;
+                font-size: 22px;
+            }
+            .scroll-to{
+                display: none !important;
+            }
+            .footer{
+                font-family: sans-serif; 
+                padding: 20px;
+            }
+        }
+
+        @media (min-width: 900px) and (max-width: 1300px){
+            .full-page {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 31vh;
+                grid-template-areas:
+                    "mitad1 mitad1"
+                    "mitad2 mitad2";
+            }
+            .about-us-text {
+                position: static;
+                color: black;
+                padding: 51px;
+                font-family: 'Bebas Neue', sans-serif;
+                font-size: 25px;
+            }
+                                    
+            .section{
+                padding: 50px;
+                width: auto;
+                margin: 0;
+                font-family: 'Bebas Neue', sans-serif;
+                font-size: 22px;
+            }
+            .scroll-to{
+                display: none !important;
+            }
+            .footer{
+                font-family: sans-serif; 
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="full-page">
+        <div class="mitad1">
+            <h2 class="about-us-title">Sobre nosotros</h2>
+        </div>
+        <div class="mitad2">
+            <div class="about-us-text">
+                <p>NowPad SAS: Tu Fuente Confiable de Innovación Tech. Somos expertos en destilar la esencia de la industria tecnológica, brindando información precisa y actualizada para inspirar y guiar a profesionales y amantes de la tecnología en todo el mundo.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-to">
+        <img src="down-arrow.png" alt="">
+    </div>
+
+    </div>
+
+    </div>
+
+    <div class="full-middle-page">
+        <div class="section" id="section-1">
+            <h1>Nuestra Misión</h1>
+            <p>En NowPad SAS, nos dedicamos incansablemente a destilar la complejidad de la industria tecnológica en conocimientos accesibles y relevantes.</p>
+            <p>Nuestra misión es ser el faro de confianza en un mar de información digital, proporcionando análisis precisos y perspicaces que empoderen a emprendedores y empresas para tomar decisiones informadas y audaces.</p>
+            <p>Buscamos no solo informar, sino también inspirar, fomentando la innovación y el progreso en la vanguardia de la tecnología. A través de nuestra dedicación al conocimiento de vanguardia y la claridad en la comunicación, estamos transformando la forma en que el mundo percibe y se relaciona con la tecnología.</p>
+            <p>Esta misión refleja el compromiso de NowPad SAS en hacer que la información tecnológica sea comprensible y accesible, así como su deseo de inspirar la innovación y el avance en la industria. Por supuesto, si deseas ajustar algún detalle o agregar algo más específico, no dudes en decirlo.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container d-flex justify-content-between">
+          <div>
+            <h4>Contacto | Ayuda</h4>
+            <p id="help-scroll-to">Para consultas, sugerencias y colaboraciones, contáctanos dando click aquí: <span class="btn-gmail" style="cursor: pointer; font-weight: bold;">gananciasonlinesas@gmail.com</span></p>
+          </div>
+          <div>
+        
+        </div>
+        <hr>
+        <div class="container text-center">
+          <p>&copy; 2023 Nowpad Company. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+
+    <script>
+        let down_btn = document.querySelector(".scroll-to");
+        const section_1 = document.querySelector("#section-1");
+
+        let isButtonClicked = false;
+
+        down_btn.addEventListener("click", function(e){
+            e.preventDefault();
+
+            section_1.scrollIntoView({behavior:"smooth"});
+            down_btn.style.display = "none";
+            isButtonClicked = true;
+        });
+
+        window.addEventListener("scroll", function(){
+            if (!isButtonClicked) {
+                down_btn.style.display = "block";
+            } else {
+                isButtonClicked = false; // Esto se agrega para restablecer el estado al desplazarse hacia arriba
+            }
+        });
+
+
+    </script>
+    
+</body>
+</html>
